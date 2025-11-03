@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cadastro de fãs</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+    <img src="img/assinatura.jpg" alt="assinatura"width="350" height="220">
+  </header>
+
+  <nav>
+     <br> <br> <br> <br> <br> <br> <br> <a href="index.html">Home</a> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+      <a href="biografia.html">Biografia</a> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+      <a href="cadastro.html">Cadastro de fãs</a> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+      <a href="filmografia.html">Filmografia</a> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+      <a href="referências.html">Referências</a> <br> <br> <br> <br> <br> <br> 
+  </nav>
+
+  <article>
+     <h1> Cadastro de Fãs </h1>
+     
+     <div class="cadastro">
+        <form>
+
+<br>
+
+      <label for="nome"> Nome completo: </label> <br>
+      <input type="text" id="nome" name="nome" required>
+<br> <br>
+      <label for="social">Nome social:</label><br>
+      <input type="text" id="social" name="social">
+<br> <br>
+      <label for="nascimento"> Data de nascimento: </label> <br>
+      <input type="date" id="nascimento" name="nascimento" required>
+<br> <br>
+      <label for="email">E-mail:</label> <br>
+      <input type="email" id="email" name="email" required>
+<br> <br>
+      <label for="genero">Gênero:</label> <br>
+      <select id="genero" name="genero" required>
+        <option value="">Selecione seu gênero</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+        <option value="outro">Outro</option>
+        <option value="nao-informar">Prefiro não informar</option>
+      </select>
+<br> <br>
+      <label for="telefone">Telefone:</label> <br>
+      <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+<br> <br>
+      <label for="estado">Estado:</label> <br>
+<select id="estado" name="estado" required>
+  <option value="">Selecione seu estado</option>
+  <option value="AC">Acre (AC)</option>
+  <option value="AL">Alagoas (AL)</option>
+  <option value="AP">Amapá (AP)</option>
+  <option value="AM">Amazonas (AM)</option>
+  <option value="BA">Bahia (BA)</option>
+  <option value="CE">Ceará (CE)</option>
+  <option value="DF">Distrito Federal (DF)</option>
+  <option value="ES">Espírito Santo (ES)</option>
+  <option value="GO">Goiás (GO)</option>
+  <option value="MA">Maranhão (MA)</option>
+  <option value="MT">Mato Grosso (MT)</option>
+  <option value="MS">Mato Grosso do Sul (MS)</option>
+  <option value="MG">Minas Gerais (MG)</option>
+  <option value="PA">Pará (PA)</option>
+  <option value="PB">Paraíba (PB)</option>
+  <option value="PR">Paraná (PR)</option>
+  <option value="PE">Pernambuco (PE)</option>
+  <option value="PI">Piauí (PI)</option>
+  <option value="RJ">Rio de Janeiro (RJ)</option>
+  <option value="RN">Rio Grande do Norte (RN)</option>
+  <option value="RS">Rio Grande do Sul (RS)</option>
+  <option value="RO">Rondônia (RO)</option>
+  <option value="RR">Roraima (RR)</option>
+  <option value="SC">Santa Catarina (SC)</option>
+  <option value="SP">São Paulo (SP)</option>
+  <option value="SE">Sergipe (SE)</option>
+  <option value="TO">Tocantins (TO)</option>
+</select>
+<br> <br>
+       <label for="cidade">Cidade:</label> <br>
+      <input type="text" id="cidade" name="cidade" required>
+<br> <br>
+      <label>Já foi a algum show da Ariana Grande?</label> <br>
+      <input type="radio" id="sim" name="show" value="sim">
+      <label for="sim">Sim</label>
+      <input type="radio" id="nao" name="show" value="nao">
+      <label for="nao">Não</label>
+<br> <br>
+      <label>Com que frequência você costuma consumir conteúdo da cantora?</label> <br>
+      <select id="frequencia" name="frequencia" required>
+        <option value="">Selecione sua frequência</option>
+        <option value="dia">Diariamente</option>
+        <option value="semana">Semanalmente</option>
+        <option value="lancamento">Quando há lancamento</option>
+        <option value="Outro">Outro</option>
+        <option value="nao-sei"> Não sei informar</option>
+      </select>
+<br> <br>
+    <label for="conheceu">Como você conheceu a Ariana?</label> <br>
+    <select id="conheceu" name="conheceu">
+        <option value="">Selecione sua opção</option>
+        <option value="amigos">Por amigos</option>
+        <option value="internet">Na internet</option>
+        <option value="tv">Na TV</option>
+        <option value="radio">No rádio</option>
+       <option value="outro">Outro</option>
+    </select>
+<br> <br>
+     <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+    <label for="newsletter">Quero receber novidades da Ariana por e-mail</label>
+<br> <br>
+    <button type="submit">Enviar Cadastro</button>
+        </form>
+        <br>
+     </div>
+
+  </article>
+
+  <aside>
+    <a href="brigtherdaysahead.html">
+  <img src="img/bda.jpg" alt="brigther days ahead" width="300" height="150">
+
+  <a href="eternalsunshine.html">
+  <img src="img/es.jpg" alt="eternal sunshine" width="300" height="150">
+
+  <a href="positions.html">
+  <img src="img/pst.jpg" alt="positions" width="300" height="150">
+
+  <a href="thankunext.html">
+  <img src="img/tun.jpg" alt="thank u next" width="300" height="150">
+
+  <a href="sweetener.html">
+  <img src="img/swt.jpg" alt="sweetener" width="300" height="150">
+
+  <a href="dangerouswoman.html">
+  <img src="img/dw.jpg" alt="dangerous woman" width="300" height="150">
+
+  <a href="myeverything.html">
+  <img src="img/me.jpg" alt="my everything" width="300" height="150">
+  
+  <a href="yourstruly.html">
+  <img src="img/yt.jpg" alt="yours truly" width="300" height="150">
+  
+</a>
+  </aside>
+
+  <footer>
+    &copy; 2025. Feito por Rafaella Prado <br>
+  </footer>
+
+</body>
+
+</html>
